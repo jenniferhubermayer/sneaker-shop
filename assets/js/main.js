@@ -103,6 +103,7 @@ checkCookieStatus = () =>{
 }
 checkCookieStatus();
 
+// TO CLEAR COOKIES:
 // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 // document.cookie = "password=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
@@ -120,7 +121,6 @@ cookieBtn.forEach(btn => {
 });
 
 // SHOW ARTICLES
-
 showArticles = () =>{
     data.forEach(function(item, index, array) {
 
@@ -177,10 +177,9 @@ showArticles = () =>{
             })
         });
 }
-
 showArticles();
 
-// ACCORDION FUNCTION
+// ACCORDION
 var accordion = document.getElementsByClassName("accordion");
 var i;
 
@@ -196,7 +195,7 @@ for (i = 0; i < accordion.length; i++) {
     });
   }
 
-// ADD ARTICLE AND COUNT ITEMS FUNCTION
+// ADD ARTICLE AND COUNT ITEMS
 let articleCount = 0;
 let articleAdder = document.querySelectorAll(".add-to-cart");
 
@@ -206,3 +205,5 @@ articleAdder.forEach(btn => {
         document.querySelector("#cart-counter").innerText = articleCount;
     })
 });
+
+// !!!!!!!! DO DO: NEWSLETTER FUNCTION
