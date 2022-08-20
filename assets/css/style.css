@@ -84,6 +84,13 @@ html {
 .shoe-grid .article-wrapper img {
   width: 100%;
 }
+.shoe-grid .article-wrapper .article-header h3 {
+  display: inline;
+}
+.shoe-grid .article-wrapper .article-header .add-to-cart {
+  float: right;
+  cursor: pointer;
+}
 
 footer {
   font-family: "Roboto", sans-serif;

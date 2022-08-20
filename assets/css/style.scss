@@ -102,6 +102,15 @@ html{
         img{
             width: 100%;
         }
+        .article-header{
+            h3{
+                display: inline;
+            }
+            .add-to-cart{
+                float: right;
+                cursor: pointer;
+            }
+        }
     }
 }
 

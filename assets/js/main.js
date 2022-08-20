@@ -123,6 +123,7 @@ cookieBtn.forEach(btn => {
 
 showArticles = () =>{
     data.forEach(function(item, index, array) {
+
         // WRAPPER FOR EACH ITEM/ARTICLE
         let articleWrapper = document.createElement("div");
         articleWrapper.className = "article-wrapper";
@@ -140,6 +141,8 @@ showArticles = () =>{
         let articleHeadline = document.createElement("h3");
         articleHeadline.textContent = item.name;
         let addToCart = document.createElement("p");
+        addToCart.className = "add-to-cart"
+        addToCart.textContent = "+"
         articleHeader.appendChild(articleHeadline);
         articleHeader.appendChild(addToCart);
         articleWrapper.appendChild(articleHeader);
@@ -157,23 +160,21 @@ showArticles = () =>{
         let articleBrand = document.createElement("p");
         articleBrand.textContent = item.brand;
         let articleSizesAvailable = document.createElement("div");
-        //!!!! HIER GEHTS WEITER. GRÖ?EN IN EINZELNE P ELEMENTE BRINGEN!
         articleSizesAvailable.className = "available-sizes";
 
         articleWrapper.appendChild(accordionPanel);
         accordionPanel.appendChild(articleBrand);
         accordionPanel.appendChild(articleSizesAvailable);
 
-        let sizes = item.sizes.toString();
-        let sizesArray = sizes.split(",");
-        console.log(sizes)
-        console.log(sizesArray)
+            // AVAILABLE SIZES
+            let sizes = item.sizes.toString();
+            let sizesArray = sizes.split(",");
 
-        sizesArray.forEach((item) => {
-            let articleSize = document.createElement("p");
-            articleSize.textContent = item;
-            articleSizesAvailable.appendChild(articleSize);
-          })
+            sizesArray.forEach((item) => {
+                let articleSize = document.createElement("p");
+                articleSize.textContent = item;
+                articleSizesAvailable.appendChild(articleSize);
+            })
         });
 }
 
@@ -194,3 +195,14 @@ for (i = 0; i < accordion.length; i++) {
       }
     });
   }
+
+// ADD ARTICLE AND COUNT ITEMS FUNCTION
+let articleCount = 0;
+let articleAdder = document.querySelectorAll(".add-to-cart");
+
+articleAdder.forEach(btn => {
+    btn.addEventListener("click", () => {
+        articleCount++;
+        document.querySelector("#cart-counter").innerText = articleCount;
+    })
+});
