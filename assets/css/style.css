@@ -82,7 +82,7 @@ html {
   width: 30%;
 }
 .shoe-grid .article-wrapper img {
-  width: -moz-available;
+  width: 100%;
 }
 
 footer {
