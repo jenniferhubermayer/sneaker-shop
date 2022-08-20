@@ -139,19 +139,15 @@ showArticles = () =>{
         articleHeader.className = "article-header";
         let articleHeadline = document.createElement("h3");
         articleHeadline.textContent = item.name;
-        articleHeader.appendChild(articleHeadline);
         let addToCart = document.createElement("p");
+        articleHeader.appendChild(articleHeadline);
         articleHeader.appendChild(addToCart);
         articleWrapper.appendChild(articleHeader);
 
-        // THIRD FLEX ELEMENT = ACCORDION BUTTON INCLUDES PRICE AND ICON
+        // THIRD FLEX ELEMENT = ACCORDION BUTTON INCLUDES PRICE
         let accordionButton = document.createElement("button");
         accordionButton.className = "accordion";
-        let articlePrice = document.createElement("p");
-        articlePrice.textContent = item.price;
-        let accordionIcon = document.createElement("p");
-        accordionButton.appendChild(articlePrice);
-        accordionButton.appendChild(accordionIcon);
+        accordionButton.textContent = item.price;
         articleWrapper.appendChild(accordionButton);
 
         // FOURTH FLEX ELEMENT = ACCORDION PANEL WITH BRAND AND A DIV WITH AVAILABLE SIZES
@@ -160,19 +156,25 @@ showArticles = () =>{
         accordionPanel.className = "panel";
         let articleBrand = document.createElement("p");
         articleBrand.textContent = item.brand;
-        accordionPanel.appendChild(articleBrand);
         let articleSizesAvailable = document.createElement("div");
         //!!!! HIER GEHTS WEITER. GRÖ?EN IN EINZELNE P ELEMENTE BRINGEN!
         articleSizesAvailable.className = "available-sizes";
-        let articleSize = document.createElement("p");
-        articleSize.textContent = item.sizes;
-        articleSizesAvailable.appendChild(articleSize);
-        accordionPanel.appendChild(articleSizesAvailable);
-        articleWrapper.appendChild(accordionPanel);
-        // let choices = item.choice.toString();
-        // let choicesArray = choices.split(",");
 
-    })
+        articleWrapper.appendChild(accordionPanel);
+        accordionPanel.appendChild(articleBrand);
+        accordionPanel.appendChild(articleSizesAvailable);
+
+        let sizes = item.sizes.toString();
+        let sizesArray = sizes.split(",");
+        console.log(sizes)
+        console.log(sizesArray)
+
+        sizesArray.forEach((item) => {
+            let articleSize = document.createElement("p");
+            articleSize.textContent = item;
+            articleSizesAvailable.appendChild(articleSize);
+          })
+        });
 }
 
 showArticles();
