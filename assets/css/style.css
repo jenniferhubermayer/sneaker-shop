@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
@@ -8,6 +9,80 @@
 
 html {
   font-family: "Poppins", sans-serif;
+}
+
+#modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+}
+#modal #-nav {
+  height: 20px;
+  width: 100%;
+  background-color: #EBD96B;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#modal #-nav h2 {
+  text-transform: uppercase;
+}
+#modal #-nav #-buttons {
+  position: relative;
+}
+#modal #-nav button {
+  border: none;
+}
+
+.accordion {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px 0 18px 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion:after {
+  content: "⌃";
+  transform: rotate(180deg);
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active {
+  color: black;
+  font-weight: 700;
+}
+.active:after {
+  transform: none;
+}
+
+.shoe-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shoe-grid .article-wrapper {
+  width: 30%;
+}
+.shoe-grid .article-wrapper img {
+  width: -moz-available;
 }
 
 footer {

@@ -28,7 +28,84 @@ html{
 
 }
 
-// MORE
+// MODAL
+
+#modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(1.5px);
+    #-nav{
+        height: 20px;
+        width: 100%;
+        background-color: $yellow;
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    h2{
+        text-transform: uppercase;
+        }
+    #-buttons{
+        position: relative;
+    }
+    button{
+        border: none;
+        }
+    }
+}
+
+// ACCORDION
+
+.accordion{
+    background-color: white;
+    cursor: pointer;
+    padding: 18px 0 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    &:after {
+        content: "\2303";
+        transform: rotate(180deg);
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+}
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.active{
+    color: black;
+    font-weight: 700;
+    &:after {
+        transform: none;
+      }
+}
+
+// ARTICLES
+
+.shoe-grid{
+    display: flex;
+    flex-wrap: wrap;
+    .article-wrapper{
+        width: 30%;
+        img{
+            width: -moz-available;
+        }
+    }
+}
+
+// FOOTER
 
 footer{
     font-family: 'Roboto', sans-serif;
