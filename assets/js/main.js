@@ -103,7 +103,7 @@ checkCookieStatus = () =>{
 }
 checkCookieStatus();
 
-// TO CLEAR COOKIES:
+// // TO CLEAR COOKIES:
 // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 // document.cookie = "password=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
@@ -207,3 +207,5 @@ articleAdder.forEach(btn => {
 });
 
 // !!!!!!!! DO DO: NEWSLETTER FUNCTION
+
+const emailInput = document.querySelector("#newsletter-sign-up");
