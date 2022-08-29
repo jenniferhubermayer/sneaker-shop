@@ -28,6 +28,14 @@ $darkYellow: #E5C643;
 
 html{
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    // max-width: 440px;
+    width: 100%;
+    // margin: auto;
+    hyphens: auto;
 }
 
 a{
@@ -35,10 +43,6 @@ a{
     :hover{
         text-decoration: underline;
     }
-}
-
-body{
-    max-width: 1918.91px;
 }
 
 button{
@@ -56,11 +60,9 @@ button{
     left: 0;
     top: 0;
     background: rgba(251, 237, 163, 0.5);
-    // backdrop-filter: blur(15px);
     backdrop-filter: blur(5px);
     z-index: 20;
     #-nav{
-        // height: 138px;
         height: fit-content;
         width: 100%;
         background-color: $lightYellow;
@@ -76,7 +78,8 @@ button{
         padding-left: 99px;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 48px;
+        // font-size: 48px;
+        font-size: 3rem;
         line-height: 50px;
         letter-spacing: 0.06em;
         }
@@ -88,7 +91,8 @@ button{
             background-color: black;
             border: none;
             font-weight: 500;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 1.5rem;
             text-transform: uppercase;
             line-height: 36px;
             letter-spacing: -0.03em;
@@ -119,7 +123,8 @@ button{
         padding: 10px;
         background-color: $darkYellow;
         font-weight: 500;
-        font-size: 24px;
+        // font-size: 24px;
+        font-size: 1.5rem;
         line-height: 36px;
         text-align: center;
         letter-spacing: -0.04em;
@@ -142,7 +147,6 @@ button{
 }
 
 // HEADER
-
 header{
     margin: 48px 99px 0 99px;
     nav{
@@ -157,20 +161,24 @@ header{
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+            justify-content: right;
             a{
-                margin-right: 65px;
+                margin-left: 65px;
                 text-transform: uppercase;
                 font-weight: 500;
-                font-size: 22px;
+                // font-size: 22px;
+                font-size: 1.375rem;
                 line-height: 33px;
                 letter-spacing: 0.01em;
                 color: $veryDarkGrey;
             }
             button{
+                margin-left: 65px;
                 background-color: black;
                 border: none;
                 font-weight: 500;
-                font-size: 24px;
+                // font-size: 24px;
+                font-size: 1.5rem;
                 text-transform: uppercase;
                 line-height: 36px;
                 letter-spacing: -0.03em;
@@ -185,6 +193,7 @@ header{
         background-image: url(../img/header-image.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         border-radius: 59px;
         padding: 68px 0 89px 37px;
         margin-bottom: 140px;
@@ -203,13 +212,15 @@ header{
             margin-left: 37px;
             text-transform: uppercase;
             font-weight: 900;
-            font-size: 96px;
+            // font-size: 96px;
+            font-size: 6rem;
             line-height: 120px;
         }
         p{
             margin: 40px 0 30px 37px;
             font-weight: 400;
-            font-size: 32px;
+            // font-size: 32px;
+            font-size: 2rem;
             line-height: 48px;
             letter-spacing: -0.05em;
         }
@@ -220,7 +231,8 @@ header{
             border-radius: 10px;
             color: white;
             font-weight: 500;
-            font-size: 30px;
+            // font-size: 30px;
+            font-size: 1.875rem;
             line-height: 45px;
             letter-spacing: -0.05em;
             border: none;
@@ -229,15 +241,14 @@ header{
 }
 
 // MAIN
-
 main{
     .new-arrivals{
-        margin-left: 99px;
-        margin-right: 99px;
+        margin: 0 99px 0 99px;
         h2{
         display: inline;
         font-weight: 900;
-        font-size: 48px;
+        // font-size: 48px;
+        font-size: 3rem;
         line-height: 50px;
         letter-spacing: 0.06em;
         background-image: url(../img/background_headline.svg);
@@ -259,7 +270,8 @@ main{
                 }
                 .article-header{
                     font-weight: 500;
-                    font-size: 32px;
+                    // font-size: 32px;
+                    font-size: 2rem;
                     line-height: 48px;
                     letter-spacing: -0.04em;
                     h3{
@@ -284,7 +296,8 @@ main{
                     outline: none;
                     transition: 0.4s;
                     font-weight: 500;
-                    font-size: 24px;
+                    // font-size: 24px;
+                    font-size: 1.5rem;
                     line-height: 36px;
                     letter-spacing: -0.04em;
                     &:after {
@@ -294,12 +307,13 @@ main{
                         font-weight: bold;
                         // float: right;
                         margin-left: 5px;
-                      }
+                    }
                 }
                 .panel {
                     color: $anotherGrey;
                     font-weight: 500;
-                    font-size: 24px;
+                    // font-size: 24px;
+                    font-size: 1.5rem;
                     line-height: 36px;
                     letter-spacing: -0.04em;
                     background-color: white;
@@ -317,14 +331,13 @@ main{
                 .active{
                     &:after {
                         transform: none;
-                      }
+                    }
                 }
             }
         }
     }
     .download-app{
-        padding-left: 99px;
-        padding-right: 99px;
+        padding: 0 99px 0 99px;
         display: flex;
         align-items: center;
         margin: 200px 0 100px 0;
@@ -332,14 +345,16 @@ main{
             width: 50%;
             h2{
                 font-weight: 900;
-                font-size: 48px;
+                // font-size: 48px;
+                font-size: 3rem;
                 line-height: 150%;
                 letter-spacing: 0.06em;
                 text-transform: uppercase;
             }
             p{
                 font-weight: 500;
-                font-size: 24px;
+                // font-size: 24px;
+                font-size: 1.5rem;
                 line-height: 35px;
                 letter-spacing: -0.04em;
                 color: $grey;
@@ -367,7 +382,8 @@ main{
         padding: 140px 20% 140px 20%;
         h2{
             font-weight: 900;
-            font-size: 55px;
+            // font-size: 55px;
+            font-size: 3.4375rem;
             line-height: 70px;
             text-align: center;
             letter-spacing: 0.03em;
@@ -375,7 +391,8 @@ main{
         }
         p{
             font-weight: 400;
-            font-size: 32px;
+            // font-size: 32px;
+            font-size: 2rem;
             line-height: 35px;
             text-align: center;
             letter-spacing: 0.03em;
@@ -389,7 +406,8 @@ main{
                 height: 85px;
                 padding-right: 50px;
                 font-weight: 400;
-                font-size: 24px;
+                // font-size: 24px;
+                font-size: 1.5rem;
                 line-height: 35px;
                 letter-spacing: 0.03em;
                 border: none;
@@ -407,7 +425,8 @@ main{
                 margin-left: -170px;
                 color: white;
                 font-weight: 500;
-                font-size: 30px;
+                // font-size: 30px;
+                font-size: 1.875rem;
                 line-height: 45px;
                 letter-spacing: -0.05em;
                 &:hover{
@@ -419,28 +438,27 @@ main{
 }
 
 // FOOTER
-
 footer{
-    padding-left: 99px;
-    padding-right: 99px;
+    padding: 119px 99px 149px 99px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
     background-color: black;
     width: 100vw;
-    padding: 119px 100px 149px 100px;
     h2{
         color: white;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 40px;
+        // font-size: 40px;
+        font-size: 2.5rem;
         line-height: 60px;
         letter-spacing: 0.03em;
     }
     p{
         font-weight: 400;
-        font-size: 24px;
+        // font-size: 24px;
+        font-size: 1.5rem;
         line-height: 40px;
         letter-spacing: 0.02em;
         color: $anotherDarkerGrey;
@@ -482,13 +500,15 @@ footer{
             color: $lightGrey;
             text-transform: capitalize;
             font-weight: 400;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 1.5rem;
             line-height: 40px;
             letter-spacing: 0.02em;
         }
         a{
             font-weight: 400;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 1.5rem;
             line-height: 40px;
             letter-spacing: 0.02em;
             color: $anotherDarkerGrey;
@@ -500,3 +520,69 @@ footer{
         }
     }
 }
+
+// MEDIA QUERIES
+
+// FOR EXTRA EXTRA LARGE DISPLAYS ≥1400px
+@media only screen and (max-width: 1400px) {
+    html{
+        font-size: 14px;
+    }
+    body {
+      background-color: rosybrown;
+    }
+    header{
+        .header-stage{
+            h1{
+                margin-right: 80px;
+            }
+        }
+    }
+  }
+
+// FOR EXTRA LARGE DISPLAYS ≥1200px
+@media only screen and (max-width: 1200px) {
+    html{
+        font-size: 12px;
+    }
+    body {
+      background-color: lightblue;
+    }
+    header{
+        margin: 48px 60px 0 60px;
+        .header-stage{
+            h1{
+                margin-right: 60px;
+            }
+        }
+    }
+    main{
+        .new-arrivals{
+            margin: 0 60px 0 60px;
+            .shoe-grid{
+                margin-top: 56px;
+                .article-wrapper{
+                    img{
+                        height: 520px;
+                    }
+                }
+            }
+        }
+        .download-app{
+            padding: 0 60px 0 60px;
+        }
+    }
+    footer{
+        padding: 119px 60px 149px 60px;
+    }
+  }
+
+  // FOR LARGE DISPLAYS ≥992px
+  @media only screen and (max-width: 992px) {
+    html{
+        font-size: 12px;
+    }
+    body {
+      background-color: $lightYellow;
+    }
+  }

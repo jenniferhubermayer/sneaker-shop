@@ -9,6 +9,14 @@
 
 html {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 a {
@@ -16,10 +24,6 @@ a {
 }
 a :hover {
   text-decoration: underline;
-}
-
-body {
-  max-width: 1918.91px;
 }
 
 button:hover {
@@ -56,7 +60,7 @@ button:hover {
   padding-left: 99px;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 50px;
   letter-spacing: 0.06em;
 }
@@ -69,7 +73,7 @@ button:hover {
   background-color: black;
   border: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 36px;
   letter-spacing: -0.03em;
@@ -97,7 +101,7 @@ button:hover {
   padding: 10px;
   background-color: #E5C643;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
   text-align: center;
   letter-spacing: -0.04em;
@@ -134,21 +138,23 @@ header nav .header-links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: right;
 }
 header nav .header-links a {
-  margin-right: 65px;
+  margin-left: 65px;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 33px;
   letter-spacing: 0.01em;
   color: #242323;
 }
 header nav .header-links button {
+  margin-left: 65px;
   background-color: black;
   border: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 36px;
   letter-spacing: -0.03em;
@@ -161,6 +167,7 @@ header .header-stage {
   background-image: url(../img/header-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 59px;
   padding: 68px 0 89px 37px;
   margin-bottom: 140px;
@@ -182,13 +189,13 @@ header .header-stage h1 {
   margin-left: 37px;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 120px;
 }
 header .header-stage p {
   margin: 40px 0 30px 37px;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 48px;
   letter-spacing: -0.05em;
 }
@@ -199,20 +206,19 @@ header .header-stage button {
   border-radius: 10px;
   color: white;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 45px;
   letter-spacing: -0.05em;
   border: none;
 }
 
 main .new-arrivals {
-  margin-left: 99px;
-  margin-right: 99px;
+  margin: 0 99px 0 99px;
 }
 main .new-arrivals h2 {
   display: inline;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 50px;
   letter-spacing: 0.06em;
   background-image: url(../img/background_headline.svg);
@@ -235,7 +241,7 @@ main .new-arrivals .shoe-grid .article-wrapper img {
 }
 main .new-arrivals .shoe-grid .article-wrapper .article-header {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 48px;
   letter-spacing: -0.04em;
 }
@@ -260,7 +266,7 @@ main .new-arrivals .shoe-grid .article-wrapper .accordion {
   outline: none;
   transition: 0.4s;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
   letter-spacing: -0.04em;
 }
@@ -274,7 +280,7 @@ main .new-arrivals .shoe-grid .article-wrapper .accordion:after {
 main .new-arrivals .shoe-grid .article-wrapper .panel {
   color: #7F7F7F;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
   letter-spacing: -0.04em;
   background-color: white;
@@ -291,8 +297,7 @@ main .new-arrivals .shoe-grid .article-wrapper .active:after {
   transform: none;
 }
 main .download-app {
-  padding-left: 99px;
-  padding-right: 99px;
+  padding: 0 99px 0 99px;
   display: flex;
   align-items: center;
   margin: 200px 0 100px 0;
@@ -302,14 +307,14 @@ main .download-app .app-left {
 }
 main .download-app .app-left h2 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 150%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 main .download-app .app-left p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 35px;
   letter-spacing: -0.04em;
   color: #7C7C7C;
@@ -336,7 +341,7 @@ main .sign-up-newsletter {
 }
 main .sign-up-newsletter h2 {
   font-weight: 900;
-  font-size: 55px;
+  font-size: 3.4375rem;
   line-height: 70px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -344,7 +349,7 @@ main .sign-up-newsletter h2 {
 }
 main .sign-up-newsletter p {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -359,7 +364,7 @@ main .sign-up-newsletter fieldset input[type=email] {
   height: 85px;
   padding-right: 50px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 35px;
   letter-spacing: 0.03em;
   border: none;
@@ -377,7 +382,7 @@ main .sign-up-newsletter fieldset input[type=submit] {
   margin-left: -170px;
   color: white;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 45px;
   letter-spacing: -0.05em;
 }
@@ -386,27 +391,25 @@ main .sign-up-newsletter fieldset input[type=submit]:hover {
 }
 
 footer {
-  padding-left: 99px;
-  padding-right: 99px;
+  padding: 119px 99px 149px 99px;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   font-family: "Roboto", sans-serif;
   background-color: black;
   width: 100vw;
-  padding: 119px 100px 149px 100px;
 }
 footer h2 {
   color: white;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 60px;
   letter-spacing: 0.03em;
 }
 footer p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #8E8E8E;
@@ -449,13 +452,13 @@ footer .footer-links h3 {
   color: #D9D9D9;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 40px;
   letter-spacing: 0.02em;
 }
 footer .footer-links a {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #8E8E8E;
@@ -464,4 +467,53 @@ footer .footer-links a {
 }
 footer .footer-links a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    background-color: rosybrown;
+  }
+  header .header-stage h1 {
+    margin-right: 80px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    background-color: lightblue;
+  }
+  header {
+    margin: 48px 60px 0 60px;
+  }
+  header .header-stage h1 {
+    margin-right: 60px;
+  }
+  main .new-arrivals {
+    margin: 0 60px 0 60px;
+  }
+  main .new-arrivals .shoe-grid {
+    margin-top: 56px;
+  }
+  main .new-arrivals .shoe-grid .article-wrapper img {
+    height: 520px;
+  }
+  main .download-app {
+    padding: 0 60px 0 60px;
+  }
+  footer {
+    padding: 119px 60px 149px 60px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    background-color: #FBEDA3;
+  }
 }/*# sourceMappingURL=style.css.map */
