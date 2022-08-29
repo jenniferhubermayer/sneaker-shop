@@ -30,7 +30,6 @@ button:hover {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   background: rgba(251, 237, 163, 0.5);
@@ -249,6 +248,8 @@ main .new-arrivals .shoe-grid .article-wrapper .article-header .add-to-cart {
   cursor: pointer;
 }
 main .new-arrivals .shoe-grid .article-wrapper .accordion {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   color: #7F7F7F;
   cursor: pointer;
@@ -268,7 +269,6 @@ main .new-arrivals .shoe-grid .article-wrapper .accordion:after {
   transform: rotate(180deg);
   color: #797979;
   font-weight: bold;
-  float: right;
   margin-left: 5px;
 }
 main .new-arrivals .shoe-grid .article-wrapper .panel {
@@ -280,7 +280,7 @@ main .new-arrivals .shoe-grid .article-wrapper .panel {
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 main .new-arrivals .shoe-grid .article-wrapper .panel .available-sizes p {
   text-decoration: underline;

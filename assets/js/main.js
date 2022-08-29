@@ -122,7 +122,7 @@ cookieBtn.forEach(btn => {
 
 // SHOW ARTICLES
 showArticles = () =>{
-    data.forEach(function(item, index, array) {
+    data.forEach(function(item) {
 
         // WRAPPER FOR EACH ITEM/ARTICLE
         let articleWrapper = document.createElement("div");
@@ -154,14 +154,12 @@ showArticles = () =>{
         articleWrapper.appendChild(accordionButton);
 
         // FOURTH FLEX ELEMENT = ACCORDION PANEL WITH BRAND AND A DIV WITH AVAILABLE SIZES
-
         let accordionPanel = document.createElement("div");
         accordionPanel.className = "panel";
         let articleBrand = document.createElement("p");
         articleBrand.textContent = item.brand;
         let articleSizesAvailable = document.createElement("div");
         articleSizesAvailable.className = "available-sizes";
-
         articleWrapper.appendChild(accordionPanel);
         accordionPanel.appendChild(articleBrand);
         accordionPanel.appendChild(articleSizesAvailable);
@@ -181,9 +179,9 @@ showArticles();
 
 // ACCORDION
 var accordion = document.getElementsByClassName("accordion");
-var i;
+// var i;
 
-for (i = 0; i < accordion.length; i++) {
+for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var panel = this.nextElementSibling;

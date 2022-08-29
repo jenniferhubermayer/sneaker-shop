@@ -53,7 +53,6 @@ button{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     background: rgba(251, 237, 163, 0.5);
@@ -273,6 +272,8 @@ main{
                     }
                 }
                 .accordion{
+                    display: flex;
+                    justify-content: space-between;
                     background-color: white;
                     color: $anotherGrey;
                     cursor: pointer;
@@ -291,7 +292,7 @@ main{
                         transform: rotate(180deg);
                         color: $arrowGrey;
                         font-weight: bold;
-                        float: right;
+                        // float: right;
                         margin-left: 5px;
                       }
                 }
@@ -304,7 +305,7 @@ main{
                     background-color: white;
                     max-height: 0;
                     overflow: hidden;
-                    transition: max-height 0.2s ease-out;
+                    transition: max-height 0.3s ease-out;
                     .available-sizes{
                         p{
                         text-decoration: underline;
