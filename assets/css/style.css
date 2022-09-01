@@ -394,7 +394,7 @@ footer {
   padding: 119px 99px 149px 99px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
   background-color: black;
   width: 100vw;
@@ -446,6 +446,7 @@ footer .follow-us .social-media-icons:hover {
 footer .footer-links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 80px;
 }
 footer .footer-links h3 {
@@ -473,9 +474,6 @@ footer .footer-links a:hover {
   html {
     font-size: 14px;
   }
-  body {
-    background-color: rosybrown;
-  }
   header .header-stage h1 {
     margin-right: 80px;
   }
@@ -483,9 +481,6 @@ footer .footer-links a:hover {
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 12px;
-  }
-  body {
-    background-color: lightblue;
   }
   header {
     margin: 48px 60px 0 60px;
@@ -503,7 +498,18 @@ footer .footer-links a:hover {
     height: 520px;
   }
   main .download-app {
-    padding: 0 60px 0 60px;
+    padding: 0 30px 0 30px;
+    flex-wrap: wrap-reverse;
+    margin: 100px 0 100px 0;
+  }
+  main .download-app .app-left, main .download-app .app-right {
+    width: 100%;
+  }
+  main .download-app .app-right {
+    margin-left: unset;
+  }
+  main .sign-up-newsletter {
+    padding: 140px 30px 140px 30px;
   }
   footer {
     padding: 119px 60px 149px 60px;
@@ -513,7 +519,58 @@ footer .footer-links a:hover {
   html {
     font-size: 12px;
   }
-  body {
-    background-color: #FBEDA3;
+}
+@media only screen and (max-width: 992px) {
+  #cart-wrapper {
+    right: 20px;
+    bottom: 20px;
+  }
+  #cart-wrapper #cart-counter {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    left: -20px;
+    top: 40px;
+  }
+  #cart-wrapper #cart-image {
+    width: 90px;
+    height: 90px;
+    background-size: 50%;
+  }
+  header {
+    margin: 48px 30px 0 30px;
+  }
+  header .header-stage {
+    padding: 60px 0 30px 30px;
+  }
+  header .header-stage h1 {
+    margin-right: 60px;
+    font-size: 5rem;
+    margin-left: 30px;
+  }
+  main .new-arrivals {
+    margin: 0 30px 0 30px;
+  }
+  main .new-arrivals .shoe-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 56px;
+  }
+  main .new-arrivals .shoe-grid .article-wrapper img {
+    height: 420px;
+  }
+  main .sign-up-newsletter fieldset #newsletter-sign-up {
+    width: 100%;
+  }
+  main .sign-up-newsletter fieldset input[type=submit] {
+    margin-left: unset;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer {
+    padding: 119px 30px 149px 30px;
+  }
+  footer .follow-us {
+    width: unset;
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
