@@ -206,3 +206,22 @@ articleAdder.forEach(btn => {
 // !!!!!!!! DO DO: NEWSLETTER FUNCTION
 
 const emailInput = document.querySelector("#newsletter-sign-up");
+
+// document.querySelector("form").addEventListener("submit", (event) =>{
+//     console.log("submits");
+//     event.preventDefault;
+// })
+
+addToNewsletter = (event) => {
+    event.preventDefault();
+    document.querySelector(".sign-up-newsletter").innerHTML = "";
+    let newsletterSubmitHeadline = document.createElement("h2");
+    newsletterSubmitHeadline.innerText = "Thank you!";
+    let newsletterSubmitText = document.createElement("p");
+    newsletterSubmitText.innerText = "You will get your response shortly.";
+    document.querySelector(".sign-up-newsletter").appendChild(newsletterSubmitHeadline);
+    document.querySelector(".sign-up-newsletter").appendChild(newsletterSubmitText);
+}
+
+const form = document.querySelector('form');
+form.addEventListener('submit', addToNewsletter);
