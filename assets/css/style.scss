@@ -592,6 +592,19 @@ footer{
 
   // FOR SMALL DISPLAYS ≥576PX
 @media only screen and (max-width: 992px) {
+    #modal{
+        #-nav{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            h2{
+                padding-left: unset;
+            }
+            #-buttons{
+                padding-right: unset;
+            }
+        }
+    }
     #cart-wrapper{
         right: 20px;
         bottom: 20px;
@@ -610,12 +623,36 @@ footer{
     }
     header{
         margin: 48px 30px 0 30px;
+        nav{
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                width: 80vw;
+            }
+            .header-links{
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                gap: 15px;
+                a{
+                width: 80vw;
+                margin-left: unset;
+                }
+            button{
+                margin-left: unset;
+                width: 60vw;
+            }
+            }
+        }
         .header-stage{
             padding: 60px 0 30px 30px;
             h1{
                 margin-right: 60px;
                 font-size: 5rem;
                 margin-left: 30px;
+            }
+            p{
+                margin: 40px 30px 30px 30px;
             }
         }
     }

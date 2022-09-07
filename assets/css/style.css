@@ -521,6 +521,17 @@ footer .footer-links a:hover {
   }
 }
 @media only screen and (max-width: 992px) {
+  #modal #-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+  #modal #-nav h2 {
+    padding-left: unset;
+  }
+  #modal #-nav #-buttons {
+    padding-right: unset;
+  }
   #cart-wrapper {
     right: 20px;
     bottom: 20px;
@@ -540,6 +551,27 @@ footer .footer-links a:hover {
   header {
     margin: 48px 30px 0 30px;
   }
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav img {
+    width: 80vw;
+  }
+  header nav .header-links {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  header nav .header-links a {
+    width: 80vw;
+    margin-left: unset;
+  }
+  header nav .header-links button {
+    margin-left: unset;
+    width: 60vw;
+  }
   header .header-stage {
     padding: 60px 0 30px 30px;
   }
@@ -547,6 +579,9 @@ footer .footer-links a:hover {
     margin-right: 60px;
     font-size: 5rem;
     margin-left: 30px;
+  }
+  header .header-stage p {
+    margin: 40px 30px 30px 30px;
   }
   main .new-arrivals {
     margin: 0 30px 0 30px;

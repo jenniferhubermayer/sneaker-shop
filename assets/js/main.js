@@ -90,17 +90,17 @@ const data = [
       price: "90.00 $",
       sizes: ["41","42", "43", "44"],
   }
-]
+];
 
 // FUNCTION FOR COOKIE CHECK ON SITE LOAD
-checkCookieStatus = () =>{
+let checkCookieStatus = () =>{
     if (document.cookie == "") {
         modal.style.display = "flex";
     }
     else{
         modal.style.display = "none";
     }
-}
+};
 checkCookieStatus();
 
 // // TO CLEAR COOKIES:
@@ -117,11 +117,11 @@ cookieBtn.forEach(btn => {
         else{
             modal.style.display = "none";
         }
-    })
+    });
 });
 
 // SHOW ARTICLES
-showArticles = () =>{
+let showArticles = () =>{
     data.forEach(function(item) {
 
         // WRAPPER FOR EACH ITEM/ARTICLE
@@ -141,8 +141,8 @@ showArticles = () =>{
         let articleHeadline = document.createElement("h3");
         articleHeadline.textContent = item.name;
         let addToCart = document.createElement("p");
-        addToCart.className = "add-to-cart"
-        addToCart.textContent = "+"
+        addToCart.className = "add-to-cart";
+        addToCart.textContent = "+";
         articleHeader.appendChild(articleHeadline);
         articleHeader.appendChild(addToCart);
         articleWrapper.appendChild(articleHeader);
@@ -172,9 +172,9 @@ showArticles = () =>{
                 let articleSize = document.createElement("p");
                 articleSize.textContent = item;
                 articleSizesAvailable.appendChild(articleSize);
-            })
+            });
         });
-}
+};
 showArticles();
 
 // ACCORDION
@@ -200,7 +200,7 @@ articleAdder.forEach(btn => {
     btn.addEventListener("click", () => {
         articleCount++;
         document.querySelector("#cart-counter").innerText = articleCount;
-    })
+    });
 });
 
 // !!!!!!!! DO DO: NEWSLETTER FUNCTION
