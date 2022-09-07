@@ -17,7 +17,7 @@ The contents of the page are build statically via the HTML. Only the list of off
 
 ### The challenge
 
-The contents of the page are build statically via the HTML. Only the list of offered shoes (under the heading “New arrivals”) is build with JavaScript. The challenges of this page are:
+The contents of the page are build statically via the HTML. Only the list of offered shoes (under the heading "New arrivals") is build with JavaScript. The challenges of this page are:
 
 1. Cookie Overlay:
    - When the site is visited, a cookie banner and an overlay appear that prevent the content of the site from being seen clearly.
