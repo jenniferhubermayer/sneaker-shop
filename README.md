@@ -35,7 +35,7 @@ The contents of the page are build statically via the HTML. Only the list of off
 
 ### Screenshot
 
-![](./screenshot/Screenshot-Sneakershop.png)
+![](./screenshot/screenshot.png)
 
 ### Links
 
